@@ -1,0 +1,97 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "jest": true
+    },
+    "extends": [
+      "plugin:react/recommended",
+      "eslint:recommended",
+      "plugin:jest/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:jest/recommended",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser", // Specifies the ESLint parser
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true, // Allows for the parsing of JSX
+        "arrowFunctions": true
+      },
+      "ecmaVersion": 2021, // Allows for the parsing of modern ECMAScript features
+      "sourceType": "module" // Allows for the use of imports
+    },
+    "plugins": [
+      "import",
+      "prettier",
+      "react",
+      "react-hooks",
+      "@typescript-eslint",
+      "jsx-a11y"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
+      },
+      "import/resolver": {
+        "node": {
+          "extensions": [".ts", ".tsx"],
+          "paths": ["./src"]
+        }
+      }
+    },
+    "rules": {
+      "one-var": ["error", "never"],
+      "quotes": ["error", "single"],  
+      // Prettier
+      "prettier/prettier": [
+        "warn",
+        {
+          "singleQuote": true,
+          "semi": true,
+          "trailingComma": "none",
+          "printWidth": 80,
+          "tabWidth": 2
+        }
+      ],
+      "class-methods-use-this": "off",
+      "import/extensions": "off",
+
+      // React
+      "react/require-default-props": "off",
+      "react/jsx-handler-names": "off",
+  
+      // Typescript
+      "@typescript-eslint/array-type": "off",
+      "@typescript-eslint/consistent-type-assertions": "off",
+      "@typescript-eslint/consistent-type-definitions": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/method-signature-style": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/restrict-template-expressions": "off",
+      "@typescript-eslint/strict-boolean-expressions": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "args": "none",
+          "ignoreRestSiblings": true,
+          "varsIgnorePattern": "^_"
+        }
+      ],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "off",
+      "import/prefer-default-export": "off",
+      "react/prop-types": "off"
+    },
+    "ignorePatterns": [
+      "/build",
+      "/coverage",
+      "/dist",
+      "/node_modules",
+      "/src/react-app-env.d.ts",
+      "/src/serviceWorker.ts",
+      "/src/setupTests.ts"
+    ]
+  }
