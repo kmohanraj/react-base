@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 /**
  * This file contains the interfaces required for below files:
  * 1. AppRoutes.tsx

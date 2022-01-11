@@ -47,4 +47,12 @@ STEP 4: Create `.eslintrc.json` file
 
 [.eslintrc.json](.eslintrc.json)
 
+STEP 5: Fixed the Single Quote issue to `package.json`
+
+```json
+"prettier": {
+    "singleQuote": true
+  }
+```
+
 STEP 5: Setup Routes
