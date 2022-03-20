@@ -9,7 +9,17 @@ STEP 1: Create React App
 STEP 2: Install Dependencies
 
 ```
-yarn add axios bootstrap jest-axe node-sass react-bootstrap react-router react-router-dom
+yarn add axios \
+         bootstrap \
+         jest-axe \
+         node-sass \
+         react-bootstrap \
+         react-router \
+         react-router-dom \
+         react-data-table-component \
+         react-datepicker \
+         react-toastify \ 
+         react-select
 ```
 
 STEP 3: Install Dev Dependencies
